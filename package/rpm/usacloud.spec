@@ -40,6 +40,9 @@ CLI client of the SakuraCloud
 %{_sysconfdir}/bash_completion.d/usacloud
 
 %changelog
+Wed Oct 31 2018 <sacloud.users@gmail.com> - 0.0.1-1
+- add repo description (by yamamoto-febc)
+
 
 * Fri Mar 3 2017 <yamamoto.febc@gmail.com> - 0.0.0
 - Initial commit
