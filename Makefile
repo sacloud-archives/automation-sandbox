@@ -37,11 +37,13 @@ next-version:
 .PHONY: create-release-pr
 create-release-pr:
 	$(eval CURRENT := $(shell echo $(CURRENT_VERSION)))
-	gobump set "$(NEXT_VERSION)" -w version/ && \
+	@gobump set "$(NEXT_VERSION)" -w version/ && \
 	docker run --rm \
         -e APP_NAME=automation-sandbox\
+        -e REPO_NAME=sacloud/automation-sandbox \
         -e ENABLE_RPM=1 \
         -e ENABLE_DEB=1 \
+        -e ENABLE_PR=1 \
         -e RELEASE_FROM="$(CURRENT)" \
         -e RELEASE_TO="$(NEXT_VERSION)" \
         -e GITHUB_TOKEN \
