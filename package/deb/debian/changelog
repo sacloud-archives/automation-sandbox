@@ -1,3 +1,10 @@
+automation-sandbox (0.0.2-1) stable; urgency=low
+
+  * add repo description (by yamamoto-febc)
+    <https://github.com/sacloud/automation-sandbox/pull/3>
+
+ -- sacloud-bot <sacloud.users@gmail.com>  Wed, 31 Oct 2018 09:31:31 +0000
+
 usacloud (0.0.0-1) unstable; urgency=low
 
   * Initial release
